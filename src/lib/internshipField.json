@@ -1,0 +1,26 @@
+[
+    {
+        "canonical": "Sekretariat",
+        "aliases": "Bidang Sekretariat"
+    },
+    {
+        "canonical": "Pengembangan Komunikasi Publik",
+        "aliases": "Bidang 1 - Pengembangan Komunikasi Publik"
+    },
+    {
+        "canonical": "Sistem Pemerintahan Berbasis Elektronik",
+        "aliases": "Bidang 2 - Sistem Pemerintahan Berbasis Elektronik"
+    },
+    {
+        "canonical": "Pengelolaan Informasi dan Saluran Komunikasi",
+        "aliases": "Bidang 3 - Pengelolaan Informasi dan Saluran Komunikasi"
+    },
+    {
+        "canonical": "Pengelolaan Infrastuktur",
+        "aliases": "Bidang 4 - Pengelolaan Infrastuktur"
+    },
+    {
+        "canonical": "Statistik",
+        "aliases": "Bidang 5 - Statistik"
+    }
+]

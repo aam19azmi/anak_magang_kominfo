@@ -1,12 +1,10 @@
 'use client';
 
 type Props = {
-  data: string[][],
-  onEdit: (rowIndex: number, rowData: string[]) => void,
-  onDelete: (rowIndex: number) => void,
+  data: string[][]
 };
 
-export default function SheetTable({ data, onEdit, onDelete }: Props) {
+export default function SheetTable({ data }: Props) {
   if (!data.length) return <p>Tidak ada data</p>;
 
   return (
@@ -17,7 +15,6 @@ export default function SheetTable({ data, onEdit, onDelete }: Props) {
             {data[0].map((header, idx) => (
               <th key={idx} className="px-4 py-2 border">{header}</th>
             ))}
-            <th className="px-4 py-2 border" colSpan={2}>Aksi</th>
           </tr>
         </thead>
         <tbody>
@@ -26,12 +23,6 @@ export default function SheetTable({ data, onEdit, onDelete }: Props) {
               {row.map((cell, j) => (
                 <td key={j} className="px-4 py-2 border">{cell}</td>
               ))}
-              <td className="px-4 py-2 border">
-                <button onClick={() => onEdit(i + 2, row)} className="text-blue-600 underline">Edit</button>
-              </td>
-              <td className="px-4 py-2 border">
-                <button onClick={() => onDelete(i + 2)} className="text-red-600 underline">Hapus</button>
-              </td>
             </tr>
           ))}
         </tbody>

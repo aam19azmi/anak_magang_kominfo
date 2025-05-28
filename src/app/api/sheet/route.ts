@@ -1,8 +1,9 @@
 import { google } from 'googleapis';
 import path from 'path';
-import { NextRequest, NextResponse } from 'next/server';
+import { NextResponse } from 'next/server';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
+import { JWT } from 'google-auth-library'; // Tambahkan ini
 
 async function getSheetsClient() {
   const auth = new google.auth.GoogleAuth({
@@ -10,11 +11,16 @@ async function getSheetsClient() {
     scopes: ['https://www.googleapis.com/auth/spreadsheets'],
   });
 
-  const client = await auth.getClient();
-  return google.sheets({ version: 'v4', auth: client });
+  const client = await auth.getClient() as JWT; // ← atau OAuth2Client jika pakai user auth
+  const sheets = google.sheets({
+    version: 'v4',
+    auth: client,
+  });
+
+  return sheets;
 }
 
-export async function GET(req: NextRequest) {
+export async function GET() {
   const session = await getServerSession(authOptions);
   if (!session) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
@@ -22,86 +28,30 @@ export async function GET(req: NextRequest) {
 
   const sheets = await getSheetsClient();
   const spreadsheetId = process.env.GOOGLE_SHEET_ID!;
-  const range = 'Sheet1!A1:D10';
 
   try {
-    const res = await sheets.spreadsheets.values.get({ spreadsheetId, range });
-    return NextResponse.json({ data: res.data.values });
-  } catch (err: any) {
-    return NextResponse.json({ error: err.message }, { status: 500 });
+    // Ambil metadata spreadsheet termasuk nama-nama sheet
+    const sheetMetadata = await sheets.spreadsheets.get({ spreadsheetId });
+
+    const sheetTitles = sheetMetadata.data.sheets?.map(
+      (sheet) => sheet.properties?.title
+    ).filter(Boolean) as string[];
+
+    const allDataEntries = await Promise.all(sheetTitles.map(async (title) => {
+      const res = await sheets.spreadsheets.values.get({
+        spreadsheetId,
+        range: title,
+      });
+      return [title, res.data.values || []] as const;
+    }));
+
+    const allData = Object.fromEntries(allDataEntries);
+
+    return NextResponse.json({ data: allData });
+  } catch (err) {
+    if (err instanceof Error) {
+      return NextResponse.json({ error: err.message }, { status: 500 });
+    }
+    return NextResponse.json({ error: 'Unknown error' }, { status: 500 });
   }
-}
-
-export async function POST(req: NextRequest) {
-  const session = await getServerSession(authOptions);
-  if (!session) {
-    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
-  }
-
-  const body = await req.json();
-  const { values } = body; // values = array, contoh: ["Azmi", "azmi@email.com", "Laki-laki"]
-
-  if (!Array.isArray(values)) {
-    return NextResponse.json({ error: 'Invalid data' }, { status: 400 });
-  }
-
-  try {
-    const sheets = await getSheetsClient();
-    const spreadsheetId = process.env.GOOGLE_SHEET_ID!;
-    const range = 'Sheet1'; // akan otomatis tambah baris
-
-    await sheets.spreadsheets.values.append({
-      spreadsheetId,
-      range,
-      valueInputOption: 'USER_ENTERED',
-      requestBody: {
-        values: [values],
-      },
-    });
-
-    return NextResponse.json({ message: 'Data berhasil ditambahkan' });
-  } catch (err: any) {
-    return NextResponse.json({ error: err.message }, { status: 500 });
-  }
-}
-
-export async function PUT(req: Request) {
-  const { rowIndex, values } = await req.json();
-  const sheets = await getSheetsClient();
-
-  await sheets.spreadsheets.values.update({
-    spreadsheetId: process.env.GOOGLE_SHEET_ID!,
-    range: `Sheet1!A${rowIndex}:C${rowIndex}`, // Misal 3 kolom
-    valueInputOption: 'USER_ENTERED',
-    requestBody: {
-      values: [values],
-    },
-  });
-
-  return NextResponse.json({ message: 'Berhasil diupdate' });
-}
-
-export async function DELETE(req: Request) {
-  const { rowIndex } = await req.json();
-  const sheets = await getSheetsClient();
-
-  const requests = [
-    {
-      deleteDimension: {
-        range: {
-          sheetId: 0, // default Sheet1 ID = 0
-          dimension: 'ROWS',
-          startIndex: rowIndex - 1,
-          endIndex: rowIndex,
-        },
-      },
-    },
-  ];
-
-  await sheets.spreadsheets.batchUpdate({
-    spreadsheetId: process.env.GOOGLE_SHEET_ID!,
-    requestBody: { requests },
-  });
-
-  return NextResponse.json({ message: 'Berhasil dihapus' });
 }

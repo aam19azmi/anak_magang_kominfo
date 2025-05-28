@@ -1,13 +1,9 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
-};
-
-module.exports = {
-  experimental: {
-    allowedDevOrigins: ['http://192.168.11.2:3000'],
-  },
+  // Tambahkan opsi konfigurasi resmi Next.js di sini
+  reactStrictMode: true,
+  // experimental: {} // Hanya gunakan jika benar-benar menggunakan fitur experimental yang valid
 };
 
 export default nextConfig;

@@ -1,0 +1,590 @@
+[
+    {
+        "canonical": "Akademi Keuangan dan Perbankan",
+        "aliases": "AKUBANK"
+    },
+    {
+        "canonical": "Akademi Manajemen Informatika BSI Purwokerto",
+        "aliases": "AMIK BSI Purwokerto"
+    },
+    {
+        "canonical": "Akademi Pariwisata Bumiputera Wiayata",
+        "aliases": "AKPAR BEWE"
+    },
+    {
+        "canonical": "Fakultas Keguruan dan Ilmu Pendidikan Universitas Airlangga Malang",
+        "aliases": "FKIP UNAIR"
+    },
+    {
+        "canonical": "Institut Agama Islam Negeri Sunan Ampel",
+        "aliases": "IAIN Sunan Ampel"
+    },
+    {
+        "canonical": "Institut Bisnis Nusantara",
+        "aliases": "IBN"
+    },
+    {
+        "canonical": "Institut Bisnis dan Informatika Indonesia",
+        "aliases": "IBII"
+    },
+    {
+        "canonical": "Institut Ilmu Kesehatan Bhakti Wiyata",
+        "aliases": "IIK"
+    },
+    {
+        "canonical": "Institut Ilmu Sosial dan Ilmu Politik Jakarta",
+        "aliases": "IISIP"
+    },
+    {
+        "canonical": "Institut Informatika dan Bisnis Darmajaya",
+        "aliases": "IBI Darmajaya"
+    },
+    {
+        "Canonical": "Institut Kalbis",
+        "aliases": "KALBIS"
+    },
+    {
+        "canonical": "Institut Keguruan dan Ilmu Pengetahuan Malang",
+        "aliases": "IKIP Malang"
+    },
+    {
+        "canonical": "Institut Kesenian Jakarta",
+        "aliases": "IKJ"
+    },
+    {
+        "canonical": "Institut Keuangan Perbankan dan Informatika Asia Perbanas",
+        "aliases": "AFBI Institute Perbanas"
+    },
+    {
+        "canonical": "Institut Manajemen Telkom",
+        "aliases": "IMT"
+    },
+    {
+        "canonical": "Institut Pertanian Bogor",
+        "aliases": "IPB"
+    },
+    {
+        "canonical": "Institut Sains dan Teknologi AKPRIND",
+        "aliases": "IST AKPRIND"
+    },
+    {
+        "canonical": "Institut Sains dan Teknologi Al Kamal",
+        "aliases": "ISTA"
+    },
+    {
+        "canonical": "Institut Sains dan Teknologi Kalbe",
+        "aliases": "ITBK"
+    },
+    {
+        "canonical": "Institut Sains dan Teknologi Nasional",
+        "aliases": "ISTN"
+    },
+    {
+        "canonical": "Institut Teknologi Adhi Tama Surabaya",
+        "aliases": "ITATS"
+    },
+    {
+        "canonical": "Intitut Teknologi Bahasa Asing",
+        "aliases": "ITBA"
+    },
+    {
+        "canonical": "Insitut Teknologi Bandung",
+        "aliases": "ITB"
+    },
+    {
+        "canonical": "Intitut Teknologi Budi Utomo",
+        "aliases": "ITBU"
+    },
+    {
+        "canonical": "Intitut Teknologi Indonesia",
+        "aliases": "ITI"
+    },
+    {
+        "canonical": "Intitut Teknologi Nasional",
+        "aliases": "ITN"
+    },
+    {
+        "canonical": "Intitut Teknologi Sepuluh Nopember",
+        "aliases": "ITS"
+    },
+    {
+        "canonical": "Intitut Teknologi Telkom",
+        "aliases": "ITT"
+    },
+    {
+        "canonical": "Inti College Indonesia",
+        "aliases": "ICI"
+    },
+    {
+        "canonical": "Perguruan Tinggi Pendidikan Guru Malang",
+        "aliases": "PTPG"
+    },
+    {
+        "canonical": "Perguruan Tinggi Raharja",
+        "aliases": "RAHARJA"
+    },
+    {
+        "canonical": "STIE Kusuma Negara",
+        "aliases": "STIEKN"
+    },
+    {
+        "canonical": "STIKES Katolik St. Vincentius a Paulo Surabaya",
+        "aliases": "STIKVINC"
+    },
+    {
+        "canonical": "STKIP Bina Bangsa Getsempena",
+        "aliases": "STKIP BBG"
+    },
+    {
+        "canonical": "STMIK AMIKOM YOGYAKARTA",
+        "aliases": "AMIKOM"
+    },
+    {
+        "canonical": "Sekolah Teknologi Bahasa Asing",
+        "aliases": "STBA"
+    },
+    {
+        "canonical": "Sekolah Tinggi Akutansi Negara",
+        "aliases": "STAN"
+    },
+    {
+        "canonical": "Sekolah Tinggi Filsafat Widya Sasana",
+        "aliases": "STFWS"
+    },
+    {
+        "canonical": "Sekolah Tinggi Ilmu Administrasi dan Manajemen Kepelabuhan Barunawati Surabaya",
+        "aliases": "STIAMAK"
+    },
+    {
+        "canonical": "Sekolah Tinggi Ilmu Akutansi Mataram",
+        "aliases": "STIA"
+    },
+    {
+        "canonical": "Sekolah Tinggi Ilmu Ekonomi Ahmad Dahlan",
+        "aliases": "STIEAD"
+    },
+    {
+        "canonical": "Sekolah Tinggi Ilmu Ekonomi Indonesia",
+        "aliases": "STIESIA SURABAYA"
+    },
+    {
+        "canonical": "Sekolah Tinggi Ilmu Ekonomi Kertanegara Malang",
+        "aliases": "STIEKMA"
+    },
+    {
+        "canonical": "Sekolah Tinggi Ilmu Ekonomi Muhammadiyah Jakarta",
+        "aliases": "STIEMJ"
+    },
+    {
+        "canonical": "Sekolah Tinggi Ilmu Ekonomi Prasetiya Mulya",
+        "aliases": "PRASMUL"
+    },
+    {
+        "canonical": "Sekolah Tinggi Ilmu Ekonomi Urip Sumoharjo",
+        "aliases": "STIEUS Surabaya"
+    },
+    {
+        "canonical": "Sekolah Tinggi Ilmu Ekonomi Yayasan Keluarga Pahlawan Negara",
+        "aliases": "STIE YKPN"
+    },
+    {
+        "canonical": "Sekolah Tinggi Ilmu Kesehatan YARSI Sumatera Barat Bukit Tinggi",
+        "aliases": "STTL"
+    },
+    {
+        "canonical": "Sekolah Tinggi Ilmu Komputer Inti",
+        "aliases": "ISI"
+    },
+    {
+        "canonical": "Sekolah Tinggi Ilmu Manajemen dan Ilmu Komputer Emotional Spiritual Quotient Business School",
+        "aliases": "EBS"
+    },
+    {
+        "canonical": "Sekolah Tinggi Ilmu Keuangan dan Perbankan",
+        "aliases": "STIKUBANK"
+    },
+    {
+        "canonical": "Sekolah Tinggi Ilmu Manajemen Informatika Bumi Gora",
+        "aliases": "STMIK Gora"
+    },
+    {
+        "canonical": "Sekolah Tinggi Ilmu Manajemen Informatika dan Komputer Widya Dharma",
+        "aliases": "STMIK Widya Dharma"
+    },
+    {
+        "canonical": "Sekolah Tinggi Pariwisata Bandung",
+        "aliases": "STPB"
+    },
+    {
+        "canonical": "Sekolah Tinggi Pembangunan Masyarakat Desa",
+        "aliases": "STPMD"
+    },
+    {
+        "canonical": "Sekolah Tinggi Seni Indonesia",
+        "aliases": "STSI"
+    },
+    {
+        "canonical": "Sekolah Tinggi Teknik Lingkungan (Yogyakarta)",
+        "aliases": "STTL"
+    },
+    {
+        "canonical": "Sekolah Tinggi Teknologi Adisutjipto",
+        "aliases": "STTA"
+    },
+    {
+        "canonical": "Sekolah Tinggi Teknologi Indonesia",
+        "aliases": "STTI"
+    },
+    {
+        "canonical": "Sekolah Tinggi Teknologi Terpadu Nurul Fikri",
+        "aliases": "STTNF"
+    },
+    {
+        "canonical": "Universitas Borneo Tarakan",
+        "aliases": "UBT"
+    },
+    {
+        "canonical": "Universitas Islam Negeri Syarif Hidayatullah",
+        "aliases": "UIN Syarif Hidayatullah"
+    },
+    {
+        "canonical": "Universitas Islam Negeri Malang",
+        "aliases": "UIN Malang"
+    },
+    {
+        "canonical": "Universitas 17 Agustus 1945",
+        "aliases": "UNTAG"
+    },
+    {
+        "canonical": "Universitas Advent Indonesia",
+        "aliases": "UNAI"
+    },
+    {
+        "canonical": "Universitas Ahmad Dahlan",
+        "aliases": "UAD"
+    },
+    {
+        "canonical": "Universitas Airlangga Surabaya",
+        "aliases": "UNAIR"
+    },
+    {
+        "canonical": "Universitas Al Azhar Indonesia",
+        "aliases": "UAI"
+    },
+    {
+        "canonical": "Universitas Andalas",
+        "aliases": "UNAND"
+    },
+    {
+        "canonical": "Universitas Angkling Darmo",
+        "aliases": "UNADA"
+    },
+    {
+        "canonical": "Universitas Atmajaya Yogyakarta",
+        "aliases": "UAJY"
+    },
+    {
+        "canonical": "Universitas Bakrie",
+        "aliases": "UB"
+    },
+    {
+        "canonical": "Universitas Bangka Belitung",
+        "aliases": "UBB"
+    },
+    {
+        "canonical": "Universitas Bengkulu",
+        "aliases": "UNIB"
+    },
+    {
+        "canonical": "Universitas Bhayangkara Jakarta Raya",
+        "aliases": "UBHARA JAYA"
+    },
+    {
+        "canonical": "Universitas Bina Nusantara",
+        "aliases": "BINUS"
+    },
+    {
+        "canonical": "Universitas Bojonegoro",
+        "aliases": "UNIGORO"
+    },
+    {
+        "canonical": "Universitas Borobudor",
+        "aliases": "UnBor"
+    },
+    {
+        "canonical": "Universitas Brawijaya",
+        "aliases": "UNBRA"
+    },
+    {
+        "canonical": "Universitas Budi Luhur",
+        "aliases": "UBL"
+    },
+    {
+        "canonical": "Universitas Bunda Mulia",
+        "aliases": "UBM"
+    },
+    {
+        "canonical": "Universitas Bung Hatta",
+        "aliases": "UNHATTA"
+    },
+    {
+        "canonical": "Universitas Bung Karno Surabaya",
+        "aliases": "UBK"
+    },
+    {
+        "canonical": "Universitas Cendrawasih",
+        "aliases": "UNCEN"
+    },
+    {
+        "canonical": "Universitas Ciputra Surabaya",
+        "aliases": "UC"
+    },
+    {
+        "canonical": "Universitas Cordova Indonesia",
+        "aliases": "UNDOVA"
+    },
+    {
+        "canonical": "Universitas Darma Persada",
+        "aliases": "UNSADA"
+    },
+    {
+        "canonical": "Universitas Darussalam Ambon",
+        "aliases": "UDA"
+    },
+    {
+        "canonical": "Universitas Dian Nuswantoro Semarang",
+        "aliases": "UDINUS"
+    },
+    {
+        "canonical": "Universitas Diponegoro Semarang",
+        "aliases": "UNDIP"
+    },
+    {
+        "canonical": "Universitas Dr. Soetomo",
+        "aliases": "UNITOMO"
+    },
+    {
+        "canonical": "Universitas Fajar",
+        "aliases": "UNIFA"
+    },
+    {
+        "canonical": "Universitas Gadjah Mada",
+        "aliases": "UGM"
+    },
+    {
+        "canonical": "Universitas Galuh Ciamis",
+        "aliases": "UNIGAL"
+    },
+    {
+        "canonical": "Universitas Gunadarma",
+        "aliases": "Gundar"
+    },
+    {
+        "canonical": "Universitas Gunung Rinjani",
+        "aliases": "UGR"
+    },
+    {
+        "canonical": "Universitas HKBP Nomensen",
+        "aliases": "UHN"
+    },
+    {
+        "canonical": "Universitas Haluoleo",
+        "aliases": "UNHALU"
+    },
+    {
+        "canonical": "Universitas Hasanuddin",
+        "aliases": "UNHAS"
+    },
+    {
+        "canonical": "Universitas Hati Nurani Rakyat Surabaya",
+        "aliases": "UNHANURA"
+    },
+    {
+        "canonical": "Universitas Ibn Khaldun Bogor",
+        "aliases": "UIKA"
+    },
+    {
+        "canonical": "Universitas Indonesia",
+        "aliases": "UI"
+    },
+    {
+        "canonical": "Universitas Indonesia Esa Unggul",
+        "aliases": "UEU"
+    },
+    {
+        "canonical": "Universitas Indraprasta Persatuan Guru Republik Indonesia",
+        "aliases": "UNINDRA PGRI"
+    },
+    {
+        "canonical": "Universitas Islam Negeri Syarif Kasim",
+        "aliases": "UIN Syarif Kasim"
+    },
+    {
+        "canonical": "Universitas Al-Azhar Mataram",
+        "aliases": "UNIZAR"
+    },
+    {
+        "canonical": "Universitas Islam Attahiriyah",
+        "aliases": "UNISAT"
+    },
+    {
+        "canonical": "Universitas Islam Bandung",
+        "aliases": "UNISBA"
+    },
+    {
+        "canonical": "Universitas Batik Surakarta",
+        "aliases": "UNIBA"
+    },
+    {
+        "canonical": "Universitas Negeri Semarang",
+        "aliases": "UNNES"
+    },
+    {
+        "canonical": "Universitas Islam Negeri Walisongo",
+        "aliases": "UIN Walisongo"
+    },
+    {
+        "canonical": "Politeknik Negeri Semarang",
+        "aliases": "POLINES"
+    },
+    {
+        "canonical": "Politeknik Maritim Negeri Indonesia",
+        "aliases": "POLIMARIN"
+    },
+    {
+        "canonical": "Universitas Katolik Soegijapranata Semarang",
+        "aliases": "UNIKA"
+    },
+    {
+        "canonical": "Universitas Islam Sultan Agung",
+        "aliases": "UNISSULA"
+    },
+    {
+        "canonical": "Universitas Muhammadiyah Semarang",
+        "aliases": "UNIMUS"
+    },
+    {
+        "canonical": "Universitas STIKUBANK",
+        "aliases": "UNISBANK"
+    },
+    {
+        "canonical": "Universitas PGRI Semarang",
+        "aliases": "UPGRIS"
+    },
+    {
+        "canonical": "SMA Negeri 1 Semarang",
+        "aliases": "SMANSA"
+    },
+    {
+        "canonical": "SMA Negeri 2 Semarang",
+        "aliases": "SMANDA"
+    },
+    {
+        "canonical": "SMA Negeri 3 Semarang",
+        "aliases": "SMAGA"
+    },
+    {
+        "canonical": "SMA Negeri 4 Semarang",
+        "aliases": "SMAPA"
+    },
+    {
+        "canonical": "SMA Negeri 5 Semarang",
+        "aliases": "SMALIMA"
+    },
+    {
+        "canonical": "SMA Negeri 6 Semarang",
+        "aliases": "SMANAM"
+    },
+    {
+        "canonical": "SMA Negeri 10 Semarang",
+        "aliases": "SMADASA"
+    },
+    {
+        "canonical": "SMA Negeri 11 Semarang",
+        "aliases": "SMASEBELAS"
+    },
+    {
+        "canonical": "SMA Kesatrian 1 Semarang",
+        "aliases": "Kesatrian 1"
+    },
+    {
+        "canonical": "SMA Kristen Tri Tunggal",
+        "aliases": "Tri Tunggal"
+    },
+    {
+        "canonical": "SMA Daniel Creative Semarang",
+        "aliases": "Daniel Creative"
+    },
+    {
+        "canonical": "SMA Kristen YSKI",
+        "aliases": "YSKI"
+    },
+    {
+        "canonical": "SMA Advent Semarang",
+        "aliases": "Advent Semarang"
+    },
+    {
+        "canonical": "SMA Institut Indonesia",
+        "aliases": "SMA Institut Indonesia"
+    },
+    {
+        "canonical": "SMA Pancasila Semarang",
+        "aliases": "Pancasila Semarang"
+    },
+    {
+        "canonical": "SMA Sedes Sapientiae",
+        "aliases": "Sedes Sapientiae"
+    },
+    {
+        "canonical": "SMA Islam Sultan Agung 1",
+        "aliases": "Sultan Agung 1"
+    },
+    {
+        "canonical": "SMA Unggulan Nurul Islami",
+        "aliases": "Nurul Islami"
+    },
+    {
+        "canonical": "SMK Negeri 1 Semarang",
+        "aliases": "SMKN 1"
+    },
+    {
+        "canonical": "SMK Kristen Terang Bangsa",
+        "aliases": "Terang Bangsa"
+    },
+    {
+        "canonical": "SMK LPI Semarang",
+        "aliases": "LPI Semarang"
+    },
+    {
+        "canonical": "SMK Majapahit Semarang",
+        "aliases": "Majapahit Semarang"
+    },
+    {
+        "canonical": "SMK Mataram Semarang",
+        "aliases": "Mataram Semarang"
+    },
+    {
+        "canonical": "SMK Muhammadiyah 1 Semarang",
+        "aliases": "Muhammadiyah 1"
+    },
+    {
+        "canonical": "SMK Muhammadiyah 2 Semarang",
+        "aliases": "Muhammadiyah 2"
+    },
+    {
+        "canonical": "SMK Nurul Barqi Semarang",
+        "aliases": "Nurul Barqi"
+    },
+    {
+        "canonical": "SMK Nusa Bhakti Semarang",
+        "aliases": "Nusa Bhakti"
+    },
+    {
+        "canonical": "SMK Nusaputera 1 Semarang",
+        "aliases": "Nusaputera 1"
+    },
+    {
+        "canonical": "SMK Nusaputera 2 Semarang",
+        "aliases": "Nusaputera 2"
+    }
+]
