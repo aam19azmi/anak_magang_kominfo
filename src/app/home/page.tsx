@@ -247,7 +247,7 @@ const Home = () => {
                     Kunjungi website &quot;SIMAKI&quot; untuk keterangan lebih lanjut
                   </p>
                   <a 
-                    href="https://www.youtube.com" 
+                    href="https://diskominfosemarangkota.my.id/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="inline-block bg-red-800 text-white px-6 py-2 rounded-lg hover:bg-red-700 transition-colors"
