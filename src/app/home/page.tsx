@@ -119,8 +119,6 @@ const Home = () => {
             <Image
               src="/assets/Belajar_Kominfo.png"
               alt="Pemerintah Kota Semarang"
-              fill
-              style={{ objectFit: 'contain' }}
               className="w-full max-w-4xl mx-auto rounded-lg border-4 border-white shadow-lg mb-6"
             />
             <div className="space-y-2">
