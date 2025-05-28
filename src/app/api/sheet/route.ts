@@ -1,17 +1,9 @@
 import { google } from 'googleapis';
-// import path from 'path';
 import { NextResponse } from 'next/server';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
-// import { JWT } from 'google-auth-library'; // Tambahkan ini
 
 async function getSheetsClient() {
-  // const auth = new google.auth.GoogleAuth({
-  //   keyFile: path.join(process.cwd(), 'src/config/credentials.json'),
-  //   scopes: ['https://www.googleapis.com/auth/spreadsheets'],
-  // });
-
-  // const client = await auth.getClient() as JWT; // ← atau OAuth2Client jika pakai user auth
   const credentialsBase64 = process.env.GOOGLE_CREDENTIALS_BASE64;
   if (!credentialsBase64) throw new Error('Missing credentials');
 
