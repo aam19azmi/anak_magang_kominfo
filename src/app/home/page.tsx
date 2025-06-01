@@ -283,11 +283,14 @@ const Home = () => {
                     item === 'Home'
                       ? '/'
                       : item === 'Kontribusi'
-                      ? '#kontribusi-section' // Link ke bagian Kontribusi
+                      ? '#kontribusi-section'
                       : item === 'Galeri'
-                      ? '#galeri-section' // Link ke bagian Galeri
-                      : '#' // Default untuk Daftar Magang atau lainnya
+                      ? '#galeri-section'
+                      : item === 'Daftar Magang'
+                      ? 'https://diskominfosemarangkota.my.id/login/daftar.php'
+                      : '#'
                   }
+                  target={item === 'Daftar Magang' ? '_blank' : '_self'}
                   className={`text-sm font-medium transition-colors ${
                     item === 'Daftar Magang'
                       ? 'text-red-800 hover:text-red-700'
