@@ -1,22 +1,26 @@
 'use client';
 
+
 import {
-  PieChart,
-  Pie,
-  Cell,
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  CartesianGrid,
   Tooltip,
   ResponsiveContainer,
+  Cell,
 } from 'recharts';
-import { useMemo, useEffect } from 'react';
+import { useMemo } from 'react';
 import { findHeaderIndex } from '@/lib/utils';
 import { normalizeUniversityName } from '@/utils/normalizeUniversity';
 
 const COLORS = ['#8884d8', '#82ca9d', '#ffc658', '#ff8042', '#8dd1e1', '#d0ed57', '#a4de6c'];
 
-export default function PieChartCount({ data }: { data: string[][] }) {
+export default function BarChartCount({ data }: { data: string[][] }) {
   const hasValidData = data && data.length > 0;
 
-  const { countMap, chartData, idxTarget, headerIdx } = useMemo(() => {
+  const { chartData, idxTarget, headerIdx } = useMemo(() => {
     const countMap = new Map<string, number>();
     let chartData: { name: string; value: number; percentage: string }[] = [];
     let idxTarget = -1;
@@ -51,12 +55,6 @@ export default function PieChartCount({ data }: { data: string[][] }) {
     return { countMap, chartData, idxTarget, headerIdx };
   }, [data, hasValidData]);
 
-  useEffect(() => {
-    console.log('Final Data mentah:', data);
-    console.log('Final ChartData:', chartData);
-    console.log('Final CountMap:', countMap);
-  }, [data, chartData, countMap]);
-
   // Validasi setelah hook
   if (!hasValidData) return <p>Data tidak tersedia</p>;
   if (headerIdx === -1) return <p>Kolom &apos;Asal Sekolah / Universitas&apos; tidak ditemukan</p>;
@@ -65,29 +63,24 @@ export default function PieChartCount({ data }: { data: string[][] }) {
 
   return (
     <div className="w-full h-auto">
-      <div className="w-full h-80">
+      <div className="w-full h-96 p-4 bg-white/50 rounded-lg shadow gap-8">
         <ResponsiveContainer>
-          <PieChart>
-            <Pie
-              data={chartData}
-              dataKey="value"
-              nameKey="name"
-              outerRadius={100}
-              fill="#8884d8"
-              label={({ name, percent }) => `${name} ${(percent * 100).toFixed(0)}%`}
-            >
+          <BarChart data={chartData} layout="vertical" margin={{ top: 20, right: 30, left: 100, bottom: 5 }}>
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis type="number" />
+            <YAxis dataKey="name" type="category" width={150} />
+            <Tooltip formatter={(value: number) => [value, 'Jumlah']} />
+            <Bar dataKey="value">
               {chartData.map((entry, index) => (
                 <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
               ))}
-            </Pie>
-            <Tooltip formatter={(value: number) => [value, 'Jumlah']} />
-            {/* Legend bawaan dihapus */}
-          </PieChart>
+            </Bar>
+          </BarChart>
         </ResponsiveContainer>
       </div>
 
       {/* Custom Legend */}
-      <div className="mt-4 max-h-40 overflow-y-auto grid grid-cols-3 gap-2 text-sm">
+      <div className="mt-4 max-h-40 overflow-y-auto grid grid-cols-3 gap-2 text-sm p-4 bg-white/50 rounded-lg shadow">
         {chartData.map((entry, index) => (
           <div key={index} className="flex items-center gap-2">
             <div

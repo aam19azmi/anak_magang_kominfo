@@ -2,7 +2,7 @@
 
 import SheetTable from "./SheetTable";
 import BarChartByTanggal from './BarChartByTanggal';
-import PieChartCount from './PieChartCount';
+import BarChartCount from './BarChartCount';
 
 export default function SheetDisplay({ data }: { data: Record<string, string[][]> }) {
   return (
@@ -17,7 +17,7 @@ export default function SheetDisplay({ data }: { data: Record<string, string[][]
                       <BarChartByTanggal rows={rows} labelMasuk="Tanggal Masuk" labelBidang={["Keterangan", "Program Studi/Jurusan", "NO.TLPN"]} />
                       <div className="mt-4">
                       <h3 className="text-lg font-semibold text-black [text-shadow:0_0_1px_white] [-webkit-text-stroke:1px_white]">Distribusi Asal Magang</h3>
-                      <PieChartCount data={rows} />
+                      <BarChartCount data={rows} />
                       </div>
                       <div className="mt-4">
                       <SheetTable data={rows} />
